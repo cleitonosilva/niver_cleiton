@@ -55,6 +55,14 @@
       },
       "scripts": {
             "dev": "vite",
-            "build": "vite build"
+            "build": "vite build",
+            "vercel-build": "npm install --platform=linux --arch=x64 && npm run build"
+      },
+      "overrides": {
+            "rollup": {
+                  "optionalDependencies": {
+                        "@rollup/rollup-linux-x64-gnu": "4.48.0"
+                  }
+            }
       }
 }
