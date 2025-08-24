@@ -53,16 +53,13 @@
             "@vitejs/plugin-react-swc": "^3.10.2",
             "vite": "^5.4.19"
       },
+      "optionalDependencies": {
+            "@rollup/rollup-linux-x64-gnu": "4.48.0",
+            "@rollup/rollup-darwin-arm64": "4.48.0",
+            "@rollup/rollup-darwin-x64": "4.48.0"
+      },
       "scripts": {
             "dev": "vite",
-            "build": "vite build",
-            "vercel-build": "npm install --platform=linux --arch=x64 && npm run build"
-      },
-      "overrides": {
-            "rollup": {
-                  "optionalDependencies": {
-                        "@rollup/rollup-linux-x64-gnu": "4.48.0"
-                  }
-            }
+            "build": "vite build"
       }
 }
