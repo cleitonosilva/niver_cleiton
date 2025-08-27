@@ -8,7 +8,8 @@ import { Input } from './ui/input';
 import { Label } from './ui/label';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from './ui/select';
 import { ImageWithFallback } from './figma/ImageWithFallback';
-import { toast } from 'sonner@2.0.3';
+import { images } from '../utils/images';
+import { toast } from 'sonner';
 import { InteractiveParticles } from './InteractiveParticles';
 import { AnimatedBackground } from './AnimatedBackground';
 import { ScrollProgress } from './ScrollProgress';
@@ -164,11 +165,11 @@ Confirmação enviada em: ${new Date().toLocaleString('pt-BR', { timeZone: 'Euro
                 repeatDelay: 2
               }}
             >
-              <ImageWithFallback 
-                src="src/assets/IMG_0894.JPG"
-                alt="Motorcycle Rider"
-                className="w-64 h-64 md:w-64 md:h-64 rounded-full object-cover mx-auto shadow-2xl border-4 border-white/80 backdrop-blur-sm"
-              />
+                                      <ImageWithFallback 
+                          src={images.imgMotorcycle}
+                          alt="Motorcycle Rider"
+                          className="w-64 h-64 md:w-64 md:h-64 rounded-full object-cover mx-auto shadow-2xl border-4 border-white/80 backdrop-blur-sm"
+                        />
             </motion.div>
           </motion.div>
           
@@ -488,7 +489,7 @@ Confirmação enviada em: ${new Date().toLocaleString('pt-BR', { timeZone: 'Euro
                         className="mb-3"
                       >
                         <ImageWithFallback 
-                          src="src/assets/logotipo-website-sabores-da-romeira-1.svg"
+                          src={images.logotipoRestaurante}
                           alt="Logo Restaurante Sabores da Romeira"
                           className="w-48 h-20 mx-auto object-contain"
                         />
@@ -603,7 +604,7 @@ Confirmação enviada em: ${new Date().toLocaleString('pt-BR', { timeZone: 'Euro
                 className="relative overflow-hidden rounded-lg"
               >
                 <ImageWithFallback 
-                  src="src/assets/IMG_8070.JPG"
+                  src={images.imgRestaurant}
                   alt="Elegant restaurant interior"
                   className="w-full object-cover"
                   style={{ height: '800px' }}

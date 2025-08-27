@@ -52,6 +52,7 @@
     build: {
       target: 'esnext',
       outDir: 'dist',
+      assetsInlineLimit: 0, // Desabilita a conversão automática para base64
     },
     server: {
       port: 3000,
